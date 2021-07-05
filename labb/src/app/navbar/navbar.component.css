@@ -38,6 +38,7 @@ header {
 }
 nav {
 	float: right;
+	padding-right: 150px;
 	line-height: 100px;
 }
 nav a {
