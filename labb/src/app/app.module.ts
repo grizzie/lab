@@ -17,6 +17,7 @@ import { CarouselPauseComponent } from './carousel-pause/carousel-pause.componen
 import { MembersComponent } from './members/members.component';
 import { CurrentMembersComponent } from './members/current-members/current-members.component';
 import { FormerMembersComponent } from './members/former-members/former-members.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { FormerMembersComponent } from './members/former-members/former-members.
     CarouselPauseComponent,
     MembersComponent,
     CurrentMembersComponent,
-    FormerMembersComponent
+    FormerMembersComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
