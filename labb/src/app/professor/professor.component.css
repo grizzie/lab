@@ -9,6 +9,7 @@ body {
 }
 .wrapper {
 	width: 1170px;
+	height: auto;
 	margin: 0 auto;
 }
 header {
@@ -64,7 +65,7 @@ nav a {
 	position: relative;
 	top: 450px;
 	background: #ebebeb;
-	height: 1500px;
+	height: auto;
 }
 .content-area h2 {
 	font-family: poppins;
@@ -88,10 +89,34 @@ p{
     text-align:left;
     font-size:1.87em;
 }
+p.thick {
+	font-weight: bold;
+	font-size:1.87em;
+
+}
 
 h3{
 	font-weight: bold;
 	font-size:3em;
 	border-style: solid;
 	border-color: black;
+	box-shadow: #000 1px 1px 0,
+	#000 2px 2px 0,
+	#000 3px 3px 0,
+	#000 4px 4px 0,
+	#000 5px 5px 0,
+	#000 6px 6px 0,
+	#000 7px 7px 0,
+	#000 8px 8px 0;
+
+}
+ul.a {
+	list-style-type: circle;
+	text-align:left;
+    font-size:1.87em;
+}
+
+h4{
+	text-align:left;
+	font-size:2.2em;
 }
