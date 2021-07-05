@@ -15,6 +15,8 @@ import { ProfessorComponent } from './professor/professor.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CarouselPauseComponent } from './carousel-pause/carousel-pause.component';
 import { MembersComponent } from './members/members.component';
+import { CurrentMembersComponent } from './members/current-members/current-members.component';
+import { FormerMembersComponent } from './members/former-members/former-members.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { MembersComponent } from './members/members.component';
     AboutusComponent,
     ProfessorComponent,
     CarouselPauseComponent,
-    MembersComponent
+    MembersComponent,
+    CurrentMembersComponent,
+    FormerMembersComponent
   ],
   imports: [
     BrowserModule,
