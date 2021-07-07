@@ -1,1 +1,131 @@
-<p>current-members works!</p>
+
+  <body>
+
+    <div class="box-area">
+
+    <!-- <app-professor></app-professor> -->
+    <div class="banner-area">
+        <h2>實驗室成員</h2>
+        </div>
+    <div class="content-area"><div class="container">
+      <div class="row">
+          <div class="wrapper">
+
+            <h2>目前成員</h2>
+
+
+            <h3>博士班</h3>
+            <div class="container-fluid">
+              <div *ngFor="let student of students">
+
+                    <div *ngIf="student.study==='Phd-degree'">
+                    <div class="col-md-4"><div class="card">
+                      <div [ngClass]="student.male == true ? 'avatar': 'avatar-f'">
+                      </div>
+                      <p>
+                        {{student.index}}
+                        {{student.name}}<br>
+                        研究方向：{{student.field}}<br>
+                      博士
+                      </p>
+                  </div></div>
+                
+               
+              </div>
+            </div>
+            </div>
+            <br>
+            <br>
+            <h3>博士在職專班</h3>
+            <div class="container-fluid">
+              <div *ngFor="let student of students">
+
+                    <div *ngIf="student.study==='On-the-Job-Phd-degree'">
+                    <div class="col-md-4"><div class="card">
+                      <div [ngClass]="student.male == true ? 'avatar': 'avatar-f'">
+                      </div>
+                      <p>
+                        {{student.index}}
+                        {{student.name}}<br>
+                        研究方向：{{student.field}}<br>
+                      博士
+                      </p>
+                  </div></div>
+                
+               
+              </div>
+            </div>
+            </div>
+            <br>
+            <br>
+            
+            <h3>碩士班</h3>
+
+            <div class="container-fluid">
+              <div *ngFor="let student of students">
+
+                    <div *ngIf="student.study==='Master-degree'">
+                    <div class="col-md-4"><div class="card">
+                      <div [ngClass]="student.male == true ? 'avatar': 'avatar-f'">
+                      </div>
+                      <p>
+                        {{student.index}}
+                        {{student.name}}<br>
+                        研究方向：{{student.field}}</p>
+                  </div></div>
+                
+               
+              </div>
+            </div>
+            </div>
+            <br>
+            <br>
+            <h3>碩士在職專班</h3>
+
+            <div class="container-fluid">
+              <div *ngFor="let student of students">
+
+                    <div *ngIf="student.study==='On-the-Job-Master-degree'">
+                    <div class="col-md-4"><div class="card">
+                      <div [ngClass]="student.male == true ? 'avatar': 'avatar-f'">
+                      </div>
+                      <p>
+                        {{student.index}}
+                        {{student.name}}<br>
+                        研究方向：{{student.field}}</p>
+                  </div></div>
+                
+               
+              </div>
+            </div>
+            </div>
+            <br>
+            <br>
+
+            <h3>四技日間部</h3>
+
+            <div class="container-fluid">
+              <div *ngFor="let student of students">
+
+                    <div *ngIf="student.study==='Bachelor-degree'">
+                    <div class="col-md-4"><div class="card">
+                      <div [ngClass]="student.male == true ? 'avatar': 'avatar-f'">
+                      </div>
+                      <p>
+                        {{student.index}}
+                        {{student.name}}<br>
+                        研究方向：{{student.field}}</p>
+                  </div></div>
+                
+               
+              </div>
+            </div>
+            </div>
+          </div>
+      </div>
+
+      </div>
+    </div>
+    </div>
+
+    </body>

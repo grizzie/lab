@@ -1,0 +1,42 @@
+[
+    {
+      "name": "XX",
+      "male":true,
+      "field":"SDN & BigData",
+      "study":"Master-degree"
+    },
+    {
+      "name": "XX",
+      "male":true,
+      "field":"SDN & BigData",
+      "study":"Master-degree"
+
+    },
+    {
+      "name": "XX",
+      "male":true,
+      "field":"SDN & BigData",
+      "study":"Master-degree"
+
+    },
+    {
+      "name": "XX",
+      "male":false,
+      "field":"SDN & BigData",
+      "study":"Bachelor-degree"
+
+    },
+    {
+      "name": "XX",
+      "male":true,
+      "field":"SDN & BigData",
+      "study":"Bachelor-degree"
+    },
+    {
+      "name": "XX",
+      "male":false,
+      "field":"SDN & BigData",
+      "study":"On-the-Job-Phd-degree" 
+    }
+   
+]

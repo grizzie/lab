@@ -11,6 +11,9 @@ body {
 	width: 1170px;
 	height: auto;
 	margin: 0 auto;
+	padding-left: 15%;
+	padding-right: 5%;
+
 }
 header {
 	height: 100px;

@@ -4,6 +4,8 @@
 	height: 100px;
 	width: 100%;
 	background-color: #262626;
+	padding-right: 13%;
+	padding-left: 13%;
 }
 
 .navbar-dark .navbar-nav .nav-link{
@@ -30,4 +32,16 @@ li.navbar-item a{
 	color: #fff;
 	font-size: 2.5em;
 	font-family: poppins;
+}
+.logo {
+	width: 30%;
+	float: left;
+	line-height: 100px;
+}
+header {
+	height: 100px;
+	background: #262626;
+	width: 100%;
+	z-index: 10;
+	position: fixed;
 }

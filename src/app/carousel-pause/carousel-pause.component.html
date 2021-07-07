@@ -1,16 +1,59 @@
-<ngb-carousel #carousel [interval]="2000" [pauseOnHover]="pauseOnHover" [pauseOnFocus]="pauseOnFocus" (slide)="onSlide($event)">
-    <ng-template ngbSlide *ngFor="let img of images; index as i">
-      <div class="carousel-caption">
-      </div>
-      <a href="https://www.google.fr/?q=Number+{{i+1}}" target="_blank" rel="nofollow noopener noreferrer">
-        <div class="picsum-img-wrapper">
-          <img [src]="img" alt="My image description">
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <div class="banner-area">
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://images.pexels.com/photos/590493/pexels-photo-590493.jpeg" class="d-block w-100" alt="...">
+          <img src="https://images.pexels.com/photos/8552529/pexels-photo-8552529.jpeg" class="d-block w-100" alt="...">
+          <img src="https://images.pexels.com/photos/8566743/pexels-photo-8566743.jpeg" class="d-block w-100" alt="...">
+
+    </div>
+    
+    <!-- <div class="carousel-item">
+    </div> -->
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+  </div>
+</div>
+<body>
+
+  <div class="content-area"><div class="container">
+    <div class="row">
+        <div class="wrapper">
+          <h2>目前成員</h2>
+          <h3>碩士班</h3>
+  
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-4"> 
+                  <div id="avatar" ></div><p>
+                    研究方向：SDN & BigData<br>
+                    碩士班</p>
+  
+              </div>
+              <div class="col-md-4">
+  
+                <div id="avatar-f" ></div><p>
+                  研究方向：SDN & BigData<br>
+                  碩士班</p>
+              </div>
+              <div class="col-md-4">
+  
+                <div id="avatar-f" ></div><p>
+                  研究方向：SDN & BigData<br>
+                  碩士班</p>
+              </div>
+            </div>
+          </div>
         </div>
-      </a>
-    </ng-template>
-  </ngb-carousel>
-  
-  <hr>
-  
-  
-  
+    </div>
+    </div>
+  </div>
+  </body>v
