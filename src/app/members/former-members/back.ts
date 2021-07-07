@@ -11,21 +11,15 @@ export class FormerMembersComponent implements OnInit {
   // public students:{name:string, male:boolean, title:string, study:string, uni:string, year: string}[] = namelist;
   public yearr=[99, 100, 101, 102,103, 104];
   public indexx;
-  public y99;
-  public y100;
-  public y101;
-  public y102;
-  public y103;
-  public y104;
   constructor() { }
 
   ngOnInit() {
-    this.y99 = this.students.filter((studentInfo)=>studentInfo.year==99);
-    this.y100 = this.students.filter((studentInfo)=>studentInfo.year==100);
-    this.y101 = this.students.filter((studentInfo)=>studentInfo.year==101);
-    this.y102 = this.students.filter((studentInfo)=>studentInfo.year==102);
-    this.y103 = this.students.filter((studentInfo)=>studentInfo.year==103);
-    this.y104 = this.students.filter((studentInfo)=>studentInfo.year==104);
+
+    this.indexx[0] = this.students.filter((studentInfo)=>studentInfo.year==this.yearr[0]);
+    this.indexx[1] = this.students.filter((studentInfo)=>studentInfo.year==this.yearr[1]);
+    this.indexx[2] = this.students.filter((studentInfo)=>studentInfo.year==this.yearr[2]);
+    this.indexx[3] = this.students.filter((studentInfo)=>studentInfo.year==this.yearr[3]);
+    this.indexx[4] = this.students.filter((studentInfo)=>studentInfo.year==this.yearr[4]);
   }
 
 }

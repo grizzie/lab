@@ -1,0 +1,45 @@
+<body>
+
+    <div class="box-area">
+  
+      <!-- <app-professor></app-professor> -->
+      <div class="banner-area">
+        <h2>實驗室成員</h2>
+      </div>
+      <div class="content-area">
+        <div class="container">
+          <div class="row">
+            <div class="wrapper">
+  
+              <h2>目前成員</h2>
+              <div *ngIf="indexx[0].length>0">
+                <h3>博士班</h3>
+                <div class="container-fluid">
+  
+                  <div *ngFor="let student of indexx[0]">
+                    <div class="col-md-4">
+                      <div class="card">
+                        <div [ngClass]="student.male == true ? 'avatar': 'avatar-f'">
+                        </div>
+                        <p>
+                          {{student.index}}
+                          {{student.name}}<br>
+                          研究方向：{{student.field}}
+                        </p>
+                      </div>
+                    </div>
+  
+                  </div>
+                </div>
+  
+  
+  
+  
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+    </div>
+  </body>

@@ -11,17 +11,17 @@ export class CurrentMembersComponent implements OnInit {
   public masterStudent;
   public masterJobStudent;
   public bachelorStudent;
-  
+  public indexx;
   public students:{name:string, male:boolean, field:string, study:string}[] = namelist;
+  public typeStudent:["Phd-degree", "On-the-Job-Phd-degree", "Master-degree","On-the-Job-Master-degree", "Bachelor-degree"];
   constructor() {
   }
   ngOnInit() {
-    this.proStudent = this.students.filter((studentInfo)=>studentInfo.study=="Phd-degree");
-    this.proJobStudent = this.students.filter((studentInfo)=>studentInfo.study=="On-the-Job-Phd-degree");
-    this.masterStudent = this.students.filter((studentInfo)=>studentInfo.study=="Master-degree");
-    this.masterJobStudent = this.students.filter((studentInfo)=>studentInfo.study=="On-the-Job-Master-degree");
-    this.bachelorStudent = this.students.filter((studentInfo)=>studentInfo.study=="Bachelor-degree");
-
+    this.indexx[0] = this.students.filter((studentInfo)=>studentInfo.study==this.typeStudent[0]);
+    this.indexx[1] = this.students.filter((studentInfo)=>studentInfo.study==this.typeStudent[1]);
+    this.indexx[2] = this.students.filter((studentInfo)=>studentInfo.study==this.typeStudent[2]);
+    this.indexx[3] = this.students.filter((studentInfo)=>studentInfo.study==this.typeStudent[3]);
+    this.indexx[4] = this.students.filter((studentInfo)=>studentInfo.study==this.typeStudent[4]);
   }
 
   

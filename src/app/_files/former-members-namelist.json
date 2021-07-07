@@ -2,8 +2,25 @@
     {
       "name": "XX",
       "male":true,
-      "title":"SDN & BigData",
-      "study":"Master-degree",
-      "uni":"國立宜蘭大學"
+      "title":"藉由錯誤數據的聚類方式改善影像特徵點提取的權重",
+      "study":"資訊工程學系碩士班",
+      "uni":"國立宜蘭大學",
+      "year":"104"
+    },
+    {
+      "name": "XX",
+      "male":true,
+      "title":"藉由錯誤數據的聚類方式改善影像特徵點提取的權重",
+      "study":"資訊工程學系碩士班",
+      "uni":"國立宜蘭大學",
+      "year":"104"
+    },
+    {
+      "name": "XX",
+      "male":true,
+      "title":"藉由錯誤數據的聚類方式改善影像特徵點提取的權重",
+      "study":"資訊工程學系碩士班",
+      "uni":"國立宜蘭大學",
+      "year":"104"
     }
 ]

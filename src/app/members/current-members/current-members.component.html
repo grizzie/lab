@@ -1,131 +1,162 @@
+<body>
 
-  <body>
-
-    <div class="box-area">
+  <div class="box-area">
 
     <!-- <app-professor></app-professor> -->
     <div class="banner-area">
-        <h2>實驗室成員</h2>
-        </div>
-    <div class="content-area"><div class="container">
-      <div class="row">
+      <h2>實驗室成員</h2>
+    </div>
+    <div class="content-area">
+      <div class="container">
+        <div class="row">
           <div class="wrapper">
 
             <h2>目前成員</h2>
+            <div *ngIf="proStudent.length>0">
+              <h3>博士班</h3>
+              <div class="container-fluid">
 
-
-            <h3>博士班</h3>
-            <div class="container-fluid">
-              <div *ngFor="let student of students">
-
-                    <div *ngIf="student.study==='Phd-degree'">
-                    <div class="col-md-4"><div class="card">
+                <div *ngFor="let student of proStudent">
+                  <div class="col-md-4">
+                    <div class="card">
                       <div [ngClass]="student.male == true ? 'avatar': 'avatar-f'">
                       </div>
                       <p>
                         {{student.index}}
                         {{student.name}}<br>
-                        研究方向：{{student.field}}<br>
-                      博士
+                        研究方向：{{student.study}}
                       </p>
-                  </div></div>
-                
-               
-              </div>
-            </div>
-            </div>
-            <br>
-            <br>
-            <h3>博士在職專班</h3>
-            <div class="container-fluid">
-              <div *ngFor="let student of students">
+                    </div>
+                  </div>
 
-                    <div *ngIf="student.study==='On-the-Job-Phd-degree'">
-                    <div class="col-md-4"><div class="card">
+                </div>
+              </div>
+
+            </div>
+            <br>
+            <br>
+            <div *ngIf="proJobStudent.length>0">
+              <h3>博士在職專班</h3>
+              <div class="container-fluid">
+
+                <div *ngFor="let student of proJobStudent">
+                  <!-- 其他資料 -->
+
+
+
+
+                  <div class="col-md-4">
+                    <div class="card">
                       <div [ngClass]="student.male == true ? 'avatar': 'avatar-f'">
                       </div>
                       <p>
                         {{student.index}}
                         {{student.name}}<br>
-                        研究方向：{{student.field}}<br>
-                      博士
+                        研究方向：{{student.field}}
                       </p>
-                  </div></div>
-                
-               
+                    </div>
+                  </div>
+
+                </div>
               </div>
-            </div>
+
             </div>
             <br>
             <br>
-            
-            <h3>碩士班</h3>
+            <div *ngIf="masterStudent.length>0">
+              <h3>碩士班</h3>
+              <div class="container-fluid">
 
-            <div class="container-fluid">
-              <div *ngFor="let student of students">
+                <div *ngFor="let student of masterStudent">
+                  <!-- 其他資料 -->
 
-                    <div *ngIf="student.study==='Master-degree'">
-                    <div class="col-md-4"><div class="card">
+
+
+
+                  <div class="col-md-4">
+                    <div class="card">
                       <div [ngClass]="student.male == true ? 'avatar': 'avatar-f'">
                       </div>
                       <p>
                         {{student.index}}
                         {{student.name}}<br>
-                        研究方向：{{student.field}}</p>
-                  </div></div>
-                
-               
+                        研究方向：{{student.field}}
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
               </div>
-            </div>
+
             </div>
             <br>
             <br>
-            <h3>碩士在職專班</h3>
+            <div *ngIf="masterJobStudent.length>0">
+              <h3>碩士在職專班</h3>
+              <div class="container-fluid">
 
-            <div class="container-fluid">
-              <div *ngFor="let student of students">
+                <div *ngFor="let student of masterJobStudent">
+                  <!-- 其他資料 -->
 
-                    <div *ngIf="student.study==='On-the-Job-Master-degree'">
-                    <div class="col-md-4"><div class="card">
+
+
+
+                  <div class="col-md-4">
+                    <div class="card">
                       <div [ngClass]="student.male == true ? 'avatar': 'avatar-f'">
                       </div>
                       <p>
                         {{student.index}}
                         {{student.name}}<br>
-                        研究方向：{{student.field}}</p>
-                  </div></div>
-                
-               
+                        研究方向：{{student.field}}
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
               </div>
-            </div>
+
             </div>
             <br>
             <br>
+            <div *ngIf="bachelorStudent.length>0">
+              <h3>四技日間部</h3>
+              <div class="container-fluid">
 
-            <h3>四技日間部</h3>
+                <div *ngFor="let student of bachelorStudent">
+                  <!-- 其他資料 -->
 
-            <div class="container-fluid">
-              <div *ngFor="let student of students">
 
-                    <div *ngIf="student.study==='Bachelor-degree'">
-                    <div class="col-md-4"><div class="card">
+
+
+                  <div class="col-md-4">
+                    <div class="card">
                       <div [ngClass]="student.male == true ? 'avatar': 'avatar-f'">
                       </div>
                       <p>
                         {{student.index}}
                         {{student.name}}<br>
-                        研究方向：{{student.field}}</p>
-                  </div></div>
-                
-               
+                        研究方向：{{student.field}}
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
               </div>
+
             </div>
-            </div>
+            <br>
+            <br>
+
+
+
+
           </div>
-      </div>
+        </div>
 
       </div>
     </div>
-    </div>
+  </div>
 
-    </body>
+</body>
+<app-footer></app-footer>
