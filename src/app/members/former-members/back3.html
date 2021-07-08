@@ -1,0 +1,59 @@
+<body>
+
+    <div class="box-area">
+  
+      <!-- <app-professor></app-professor> -->
+      <div class="banner-area">
+        <h2>實驗室成員</h2>
+      </div>
+      <div class="content-area">
+        <div class="container">
+          <div class="row">
+            <div class="wrapper">
+  
+              <h2>歷年成員</h2>
+              <ng-container *ngFor="let listInfo of studentList">
+                
+                <h3>{{ listInfo.year }}年畢業生</h3>
+                <ng-container *ngIf="listInfo.student.proStudent.length > 0">
+                  <h4>博士班</h4>
+                  <div *ngFor="let student of listInfo.student.proStudent">
+                    {{ student.name }} - {{ student.field }}
+                  </div>
+                </ng-container>
+                <ng-container *ngIf="listInfo.student.proJobStudent.length > 0">
+                  <h4>博士專班</h4>
+                  <div *ngFor="let student of listInfo.student.proJobStudent">
+                    {{ student.name }} - {{ student.field }}
+                  </div>
+                </ng-container>
+                <ng-container *ngIf="listInfo.student.masterStudent.length > 0">
+                  <h4>碩士班</h4>
+                  <div *ngFor="let student of listInfo.student.masterStudent">
+                    {{ student.name }} - {{ student.field }}
+                  </div>
+                </ng-container>
+                <ng-container *ngIf="listInfo.student.masterJobStudent.length > 0">
+                  <h4>碩專班</h4>
+                  <div *ngFor="let student of listInfo.student.masterJobStudent">
+                    {{ student.name }} - {{ student.field }}
+                  </div>
+                </ng-container>
+                <ng-container *ngIf="listInfo.student.bachelorStudent.length > 0">
+                  <h4>學士班</h4>
+                  <div *ngFor="let student of listInfo.student.bachelorStudent">
+                    {{ student.name }} - {{ student.field }}
+                  </div>
+                </ng-container>
+                <hr />
+              </ng-container>
+  
+            </div>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+  
+  </body>
+  <app-footer></app-footer>
