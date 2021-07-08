@@ -148,8 +148,7 @@ p{
 }
 
 .card-f{
-	border-bottom: solid #262626;
-	border-radius: 0.5em;
+	border-top: solid #262626;
 	/* width:1200px;
 	height: 500px; */
 	background-color: #ebebeb;
@@ -161,12 +160,8 @@ p{
 	
   
 }
-.card p{
-	font-family: poppins;
-	color: #262626;
-	text-align:center;
 
-}
+
 h3{
 	font-weight: bold;
 	font-size:3em;
@@ -180,13 +175,16 @@ h3{
 	#000 6px 6px 0,
 	#000 7px 7px 0,
 	#000 8px 8px 0;
+	position: relative;
 
 }
-h5{
+h4{
 	font-family: poppins;
 	color: #262626;
 	text-align:center;
-	font-size:2em;
+	font-size:2.5em;
+	font-weight: bold;
+	
 
 }
 .col-md-4{
@@ -195,10 +193,18 @@ h5{
 	padding-bottom: 30px;
 	padding-top: 30px;
 }
+
 .card-deck{
 	padding-left: 75px;
 }
+
 .col-md-8{
 	padding-top: 10%;
 	padding-bottom: 10%;
 }
+
+.col-md-8 p a{
+	font-size:1.2em;
+	font-weight: bold;
+}
+

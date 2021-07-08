@@ -22,7 +22,7 @@ body {
 	margin: 0 auto;
 	padding-left: 5%;
 	padding-right: 5%;
-	height:auto;
+	height:1000px;
 	padding-top:2em;
 }
 header {
@@ -179,4 +179,19 @@ h3{
 	#000 7px 7px 0,
 	#000 8px 8px 0;
 
+}
+
+/* .carousel-indicators li{
+	position: relative;
+} */
+
+/* .carousel-inner > .item > img {
+	width:640px;
+	height:360px;
+  } */
+  
+
+.glyphicon{
+	background-color: #262626;
+	border-radius: 0.1em;
 }
