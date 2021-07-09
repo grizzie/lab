@@ -9,9 +9,11 @@ body {
 }
 .wrapper {
 	width: 1170px;
+	height: auto;
 	margin: 0 auto;
-	padding-left: 5%;
-	padding-right: 5%;
+	padding-left: 15%;
+	padding-right: 15%;
+
 }
 header {
 	height: 100px;
@@ -60,6 +62,7 @@ nav a {
 	font-family: poppins;
 	text-transform: uppercase;
 	color: #fff;
+	text-align: center;
 }
 .content-area {
 	width: 100%;
@@ -80,11 +83,49 @@ nav a {
 	font-family: poppins;
 	line-height: 30px;
 }
+
 h2{
 	font-weight: bold;
 }
 
+
 p{
     text-align:left;
-    font-size:1.87em;
+    font-size:1.2em;
+	font-weight:450;
+	font-family: poppins;
+
+}
+p.thick {
+	font-weight: bold;
+	font-size:1.2em;
+
+}
+
+h3{
+	font-weight: bold;
+	font-size:2em;
+	border-style: solid;
+	border-color: black;
+	box-shadow: #000 1px 1px 0,
+	#000 2px 2px 0,
+	#000 3px 3px 0,
+	#000 4px 4px 0,
+	#000 5px 5px 0,
+	#000 6px 6px 0,
+	#000 7px 7px 0,
+	#000 8px 8px 0;
+
+}
+ul.a {
+	list-style-type: circle;
+	text-align:left;
+    font-size:1.2em;
+	font-family: poppins;
+
+}
+
+h4{
+	text-align:left;
+	font-size:1.5em;
 }

@@ -30,7 +30,7 @@
     
     h2 {
     font-weight: 400;
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: poppins;
     border-left: 2px solid #fff;
     padding-left: 0.5em;
@@ -42,7 +42,7 @@
     }
     
     .footer li {
-    line-height: 2em;
+    line-height: 1.5em;
     }
     
     .footer a {
@@ -61,7 +61,7 @@
     
     .box a {
     color: #fff;
-    font-size: 2em;
+    font-size: 1.5em;
 	font-family: poppins;
 
     }
@@ -132,7 +132,7 @@ p{
 	color: #fff;
 }
 .title{
-    font-size:2.5em;
+    font-size:2.0em;
     font-family: poppins;
 	color: #fff;
 	top: 450px;

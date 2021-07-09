@@ -12,7 +12,7 @@ body {
 	height: auto;
 	margin: 0 auto;
 	padding-left: 15%;
-	padding-right: 5%;
+	padding-right: 15%;
 
 }
 header {
@@ -91,17 +91,20 @@ h2{
 
 p{
     text-align:left;
-    font-size:1.87em;
+    font-size:1.2em;
+	font-weight:450;
+	font-family: poppins;
+
 }
 p.thick {
 	font-weight: bold;
-	font-size:1.87em;
+	font-size:1.2em;
 
 }
 
 h3{
 	font-weight: bold;
-	font-size:3em;
+	font-size:2em;
 	border-style: solid;
 	border-color: black;
 	box-shadow: #000 1px 1px 0,
@@ -117,10 +120,25 @@ h3{
 ul.a {
 	list-style-type: circle;
 	text-align:left;
-    font-size:1.87em;
+    font-size:1.2em;
+	font-family: poppins;
+
 }
 
 h4{
-	text-align:left;
-	font-size:2.2em;
+	font-family: poppins;
+	color: #262626;
+	text-align:center;
+	font-size:1.8em;
+	font-weight: bold;
+	border-bottom: solid #262626;
+
+}
+
+.thick{
+	font-weight: bold;	
+}
+.center{
+	text-align: center;
+	font-size:1.2em;
 }
