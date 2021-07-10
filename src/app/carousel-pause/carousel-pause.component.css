@@ -6,7 +6,7 @@ body {
 	text-align: center;
 }
 .wrapper {
-	width: 1170px;
+	width: 100%;
 	margin: 0 auto;
 	padding-left: 5%;
 	padding-right: 5%;
@@ -152,7 +152,7 @@ p{
 }
 h3{
 	font-weight: bold;
-	font-size:3em;
+	font-size:1.8em;
 	border-style: solid;
 	border-color: black;
 	box-shadow: #000 1px 1px 0,
@@ -194,7 +194,7 @@ h3{
 .col-md-4 p{
 	padding-top: 10px;
 	text-align: center;
-	font-size: 2.2em;
+	font-size: 1.8em;
 	font-weight: bold;
 }
 .col-md-4 svg{

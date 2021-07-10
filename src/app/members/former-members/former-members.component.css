@@ -177,7 +177,7 @@ h4{
 	font-weight: bold;
 
 }
-.col-md-4{
+.col{
 	padding-left: 50px;
 	padding-right: 10px;
 	padding-bottom: 30px;
@@ -188,17 +188,17 @@ h4{
 	padding-left: 75px;
 }
 
-.col-md-8{
+.col-8{
 	padding-top: 10%;
 	padding-bottom: 10%;
 	
 }
-.col-md-8 p{
+.col-8 p{
 	font-family: poppins;
 	font-size:1.3em;
 }
 
-.col-md-8 p a{
+.col-8 p a{
 	font-size:1.2em;
 	font-weight: bold;
 }

@@ -19,14 +19,14 @@
                 <ng-container *ngIf="listInfo.student.proStudent.length > 0">
                   <h4>博士班</h4>
                   <div *ngFor="let student of listInfo.student.proStudent">
-                    <div class="col-md-12">
                       <div class="card-f">
-                        <div class="col-md-4">
+                        <div class="row">
+
+                        <div class="col">
                           <div [ngClass]="student.male == true ? 'avatar': 'avatar-f'">
                           </div>
                         </div>
-                        <div class="col-md-8">
-  
+                        <div class="col-8">
                           <p>
                             <a>
                               {{student.name}}</a><br>
@@ -45,12 +45,12 @@
                   <div *ngFor="let student of listInfo.student.proJobStudent">
                     <div class="col-md-12">
                       <div class="card-f">
-                        <div class="col-md-4">
+                        <div class="col">
   
                           <div [ngClass]="student.male == true ? 'avatar': 'avatar-f'">
                           </div>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-8">
   
                           <p>
                             <a>
@@ -68,14 +68,16 @@
                 <ng-container *ngIf="listInfo.student.masterStudent.length > 0">
                   <h4>碩士班</h4>
                   <div *ngFor="let student of listInfo.student.masterStudent">
-                    <div class="col-md-12">
-                      <div class="card-f">
-                        <div class="col-md-4">
+ 
+                    <div class="card-f">
+                      <div class="row">
+
+                        <div class="col">
   
                           <div [ngClass]="student.male == true ? 'avatar': 'avatar-f'">
                           </div>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-8">
   
                           <p>
                             <a>
@@ -85,22 +87,22 @@
                             畢業論文:{{student.title}}
   
                           </p>
-                        </div>
                       </div>
+                    </div>
                     </div>
                   </div>
                 </ng-container>
                 <ng-container *ngIf="listInfo.student.masterJobStudent.length > 0">
                   <h4>碩專班</h4>
                   <div *ngFor="let student of listInfo.student.masterJobStudent">
-                    <div class="col-md-12">
                       <div class="card-f">
-                        <div class="col-md-4">
+                        <div class="row">
+                        <div class="col">
   
                           <div [ngClass]="student.male == true ? 'avatar': 'avatar-f'">
                           </div>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-8">
   
                           <p>
                             <a>
@@ -111,22 +113,22 @@
                             畢業論文:{{student.title}}
   
                           </p>
-                        </div>
                       </div>
                     </div>
-                  </div>
+                  </div></div>
                 </ng-container>
                 <ng-container *ngIf="listInfo.student.bachelorStudent.length > 0">
                   <h4>學士班</h4>
                   <div *ngFor="let student of listInfo.student.bachelorStudent">
-                    <div class="col-md-12">
                       <div class="card-f">
-                        <div class="col-md-4">
+                        <div class="row">
+
+                        <div class="col">
   
                           <div [ngClass]="student.male == true ? 'avatar': 'avatar-f'">
                           </div>
                         </div>
-                        <div class="col-md-8">
+                        <div class="col-8">
   
                           <p>
                             <a>
