@@ -12,62 +12,145 @@
           <div class="wrapper">
 
             <h2>目前成員</h2>
-
-            <div *ngIf="masterStudent.length>0">
-              <h3>碩士班</h3>
+            <div *ngIf="proStudent.length>0">
+              <h3>博士班</h3>
               <div class="container-fluid">
+                <div class="card-deck">
 
-              <div class="card-deck">
-
-                <div class="row row-cols-1 row-cols-md-3 g-4" >
-
-                <div *ngFor="let student of masterStudent">
-
-                    <div class="col">
-                      <div class="card-f">
-                        <div [ngClass]="student.male == true ? 'avatar': 'avatar-f'">
-                        </div>
-                          
+                  <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div *ngFor="let student of proStudent">
+                      <div class="col">
+                        <div class="card-f">
+                          <div [ngClass]="student.male == true ? 'avatar': 'avatar-f'">
+                          </div>
                           <p>
                             {{student.index}}
                             {{student.name}}<br>
                             研究方向：{{student.field}}
                           </p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <br>
+            <br>
+            <br>
+            <div *ngIf="proJobStudent.length>0">
+              <h3>博士在職專班</h3>
+              <div class="container-fluid">
+                <div class="card-deck">
+
+                  <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div *ngFor="let student of proJobStudent">
+                      <div class="col">
+                        <div class="card-f">
+                          <div [ngClass]="student.male == true ? 'avatar': 'avatar-f'">
+                          </div>
+                          <p>
+                            {{student.index}}
+                            {{student.name}}<br>
+                            研究方向：{{student.field}}
+                          </p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <br>
+            <br>
+            <br>
+            <div *ngIf="masterStudent.length>0">
+              <h3>碩士班</h3>
+              <div class="container-fluid">
+
+                <div class="card-deck">
+
+                  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                    <div *ngFor="let student of masterStudent">
+
+                      <div class="col">
+                        <div class="card-f">
+                          <div [ngClass]="student.male == true ? 'avatar': 'avatar-f'">
+                          </div>
+
+                          <p>
+                            {{student.index}}
+                            {{student.name}}<br>
+                            研究方向：{{student.field}}
+                          </p>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-              </div>
             </div>
+            <br>
             <br>
             <br>
             <div *ngIf="masterJobStudent.length>0">
               <h3>碩士在職專班</h3>
               <div class="container-fluid">
+                <div class="card-deck">
 
-                <div *ngFor="let student of masterJobStudent">
-                  <!-- 其他資料 -->
-
-
-
-
-                  <div class="col-md-4">
-                    <div class="card">
-                      <div [ngClass]="student.male == true ? 'avatar': 'avatar-f'">
+                  <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div *ngFor="let student of masterJobStudent">
+                      <div class="col">
+                        <div class="card-f">
+                          <div [ngClass]="student.male == true ? 'avatar': 'avatar-f'">
+                          </div>
+                          <p>
+                            {{student.index}}
+                            {{student.name}}<br>
+                            研究方向：{{student.field}}
+                          </p>
+                        </div>
                       </div>
-                      <p>
-                        {{student.index}}
-                        {{student.name}}<br>
-                        研究方向：{{student.field}}
-                      </p>
+
                     </div>
                   </div>
-
                 </div>
               </div>
 
             </div>
+            <br>
+            <br>
+            <br>
+            <div *ngIf="bachelorStudent.length>0">
+              <h3>四技日間部</h3>
+              <div class="container-fluid">
+                <div class="card-deck">
+                  <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div *ngFor="let student of bachelorStudent">
+                      <div class="col">
+                        <div class="card-f">
+                          <div [ngClass]="student.male == true ? 'avatar': 'avatar-f'">
+                          </div>
+                          <p>
+                            {{student.index}}
+                            {{student.name}}<br>
+                            研究方向：{{student.field}}
+                          </p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <br>
             <br>
             <br>
 
