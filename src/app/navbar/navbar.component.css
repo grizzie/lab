@@ -7,16 +7,11 @@
 	padding-right: 13%;
 	padding-left: 13%;
 } */
-.nav-f{
-	padding-right: 13%;
-	padding-left: 13%;
-}
 
 .navbar-dark .navbar-nav .nav-link{
 	color: #fff;
 	font-size: 1.5em;
 	font-family: poppins;
-	padding-inline: 1em;
 }
 nav img{
 	width: 120px;
@@ -50,7 +45,7 @@ li.navbar-item a{
 	font-family: poppins;
 }
 .logo {
-	width: 30%;
+	width: 25%;
 	float: left;
 	line-height: 100px;
 }
@@ -91,13 +86,13 @@ nav{
 
 	.title{
 		color: #fff;
-		font-size: 1.3em;
+		font-size: 1.2em;
 		font-family: poppins;
 		text-align: center;
 	}
 	.details{
 		color: #fff;
-		font-size: 0.8em;
+		font-size: 0.7em;
 		font-family: poppins;
 		/* width: 15px; */
 	}
@@ -107,9 +102,14 @@ nav{
 	
 	.navbar-dark .navbar-nav .nav-link{
 		font-size: 1em;
+		padding: 0px !important;
 	}
 	.dropdown-item{
 		font-size: 1em;
+
+	}
+	.row{
+		padding-right: 0;
 
 	}
 }
