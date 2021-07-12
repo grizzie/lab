@@ -93,7 +93,6 @@ nav{
 		color: #fff;
 		font-size: 1.3em;
 		font-family: poppins;
-		width: 15px;
 		text-align: center;
 	}
 	.details{
@@ -106,4 +105,11 @@ nav{
 		padding-right: 0;
 	}
 	
+	.navbar-dark .navbar-nav .nav-link{
+		font-size: 1em;
+	}
+	.dropdown-item{
+		font-size: 1em;
+
+	}
 }

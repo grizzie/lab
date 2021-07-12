@@ -202,4 +202,40 @@ h3{
 	padding-bottom: 2%;
 
 }
+@media(max-width: 700px){
+	.banner-area{
+		height: 160px;
+		top: 100px;
+	}
+	.banner-area h2 {
+		transform: translate(-50%, -50%);
+		position: absolute;
+		top: 50%;
+		left: 50%;
+	  	font-size: 40px;
+		font-family: poppins;
+		color: #fff;
+		text-align: center;
+	}
+	.content-area {
+		width: 100%;
+		position: relative;
+		top: 260px;
+		background: #ebebeb;
+		height: 1200px;
+	}
+	.wrapper{
+		width: 100%;
+	height: auto;
+	margin: 0 auto;
+	padding-left: 15%;
+	padding-right: 15%;
+	}
+	.wrapper h2{
+		font-size:1.8em;
+	}
+	.col-md-4 p{
+		font-size: 1.5em;
+	}
+}
 

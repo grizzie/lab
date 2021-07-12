@@ -11,8 +11,9 @@ const routes: Routes = [
   { path: 'professor',component: ProfessorComponent},
   { path: 'about',component: AboutComponent},
   { path: 'members',component: MembersComponent},
-  { path: 'current-members',component: CurrentMembersComponent},
-  { path: 'former-members',component: FormerMembersComponent},
+  { path: 'members/current-members',component: CurrentMembersComponent},
+  { path: 'members/former-members',component: FormerMembersComponent},
+  { path: '',component: CarouselPauseComponent},
 ];
 
 @NgModule({
