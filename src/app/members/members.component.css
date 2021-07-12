@@ -78,6 +78,18 @@ nav a {
 	text-transform: uppercase;
 	color: #fff;
 }
+
+.title-area h2 {
+	font-size: 70px;
+	font-family: poppins;
+	color: #fff;
+	text-align: center;
+	transform: translate(-50%, -50%);
+	position: relative;
+	top: 50%;
+	left: 50%;
+}
+
 .content-area {
 	width: 100%;
 	position: relative;
