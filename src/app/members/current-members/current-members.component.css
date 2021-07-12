@@ -231,7 +231,7 @@ h5{
 		position: relative;
 		top: 260px;
 		background: #ebebeb;
-		height: 1200px;
+		height: auto;
 	}
 	.wrapper{
 		width: 100%;
@@ -242,6 +242,5 @@ h5{
 	}
 	.wrapper h2{
 		font-size:1.8em;
-
 	}
 }
