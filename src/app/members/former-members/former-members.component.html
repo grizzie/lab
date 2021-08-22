@@ -1,156 +1,133 @@
 <body>
 
-    <div class="box-area">
-  
-      <div class="banner-area">
+  <div class="box-area">
+
+    <div class="banner-area">
+      <div class="title-area">
+
         <h2>實驗室成員</h2>
       </div>
-      <div class="content-area">
-        <div class="container">
-          <div class="row">
-            <div class="wrapper">
-  
-              <h2>歷年成員</h2>
-              <ng-container *ngFor="let listInfo of studentList">
-  
-                <h3>{{ listInfo.year }}年畢業生</h3>
-                <br>
-                <br>
+    </div>
+    <div class="content-area">
+      <div class="container">
+        <div class="row">
+          <div class="wrapper">
+
+            <h2>
+              <div data-aos="fade-down" data-aos-duration="1000" data-aos-once="true">
+                歷年成員</div>
+            </h2>
+            <ng-container *ngFor="let listInfo of studentList">
+
+              <mat-accordion multi=true class="custom-accordion">
+
                 <ng-container *ngIf="listInfo.student.proStudent.length > 0">
-                  <h4>博士班</h4>
                   <div *ngFor="let student of listInfo.student.proStudent">
-                      <div class="card-f">
-                        <div class="row">
-
-                        <div class="col">
-                          <div [ngClass]="student.male == true ? 'avatar': 'avatar-f'">
+                    <mat-expansion-panel>
+                      <mat-expansion-panel-header>
+                        <div class="col"><strong>
+                            {{student.name}}</strong>
+                          <div ng-if="student > 0">
                           </div>
+                          畢業論文：{{student.title}}
                         </div>
-                        <div class="col-8">
-                          <p>
-                            <a>
-                              {{student.name}}</a><br>
-                              {{student.uni}}<br>
-                              {{student.field}}<br>
-                              畢業論文:{{student.title}}
-  
-                          </p>
+                      </mat-expansion-panel-header>
+                      <mat-panel-description>
+                        <div class="col">大學： {{student.uni}}
+                          <div ng-if="student > 0">
+                          </div>{{student.year}}年{{student.field}}畢業
                         </div>
-                      </div>
-                    </div>
+                      </mat-panel-description>
+                    </mat-expansion-panel>
+
+
                   </div>
                 </ng-container>
+
+                <div ng-if="student > 0">
+                </div>
                 <ng-container *ngIf="listInfo.student.proJobStudent.length > 0">
-                  <h4>博士專班</h4>
                   <div *ngFor="let student of listInfo.student.proJobStudent">
-                    <div class="col-md-12">
-                      <div class="card-f">
-                        <div class="col">
-  
-                          <div [ngClass]="student.male == true ? 'avatar': 'avatar-f'">
+                    <mat-expansion-panel>
+                      <mat-expansion-panel-header>
+                        <div class="col"><strong>
+                            {{student.name}}</strong>
+                          <div ng-if="student > 0">
                           </div>
+                          畢業論文：{{student.title}}
                         </div>
-                        <div class="col-8">
-  
-                          <p>
-                            <a>
-                              {{student.name}}</a><br>
-                              {{student.uni}}<br>
-                              {{student.field}}<br>
-                              畢業論文:{{student.title}}
-  
-                          </p>
+                      </mat-expansion-panel-header>
+
+                      <mat-panel-description>
+                        <div class="col">大學： {{student.uni}}
+                          <div ng-if="student > 0">
+                          </div>{{student.year}}年{{student.field}}畢業
                         </div>
-                      </div>
-                    </div>
+                      </mat-panel-description>
+                    </mat-expansion-panel>
+
                   </div>
                 </ng-container>
+                <div ng-if="student > 0">
+                </div>
                 <ng-container *ngIf="listInfo.student.masterStudent.length > 0">
-                  <h4>碩士班</h4>
                   <div *ngFor="let student of listInfo.student.masterStudent">
- 
-                    <div class="card-f">
-                      <div class="row">
-
-                        <div class="col">
-  
-                          <div [ngClass]="student.male == true ? 'avatar': 'avatar-f'">
+                    <mat-expansion-panel>
+                      <mat-expansion-panel-header>
+                        <div class="col"><strong>
+                            {{student.name}}</strong>
+                          <div ng-if="student > 0">
                           </div>
+                          畢業論文：{{student.title}}
                         </div>
-                        <div class="col-8">
-  
-                          <p>
-                            <a>
-                              {{student.name}}</a><br>
-                            {{student.uni}}<br>
-                            {{student.field}}<br>
-                            畢業論文:{{student.title}}
-  
-                          </p>
-                      </div>
-                    </div>
-                    </div>
+                      </mat-expansion-panel-header>
+                      <mat-panel-description>
+                        <div class="col">大學：{{student.uni}}
+                          <div ng-if="student > 0">
+                          </div>{{student.year}}年{{student.field}}畢業
+                        </div>
+                      </mat-panel-description>
+                    </mat-expansion-panel>
+
                   </div>
                 </ng-container>
+                <div ng-if="student > 0">
+                </div>
                 <ng-container *ngIf="listInfo.student.masterJobStudent.length > 0">
-                  <h4>碩專班</h4>
                   <div *ngFor="let student of listInfo.student.masterJobStudent">
-                      <div class="card-f">
-                        <div class="row">
-                        <div class="col">
-  
-                          <div [ngClass]="student.male == true ? 'avatar': 'avatar-f'">
+                    <mat-expansion-panel>
+                      <mat-expansion-panel-header>
+                        <div class="col"><strong>
+                            {{student.name}}</strong>
+                          <div ng-if="student > 0">
                           </div>
+                          畢業論文：{{student.title}}
                         </div>
-                        <div class="col-8">
-  
-                          <p>
-                            <a>
-                            {{student.name}}</a><br>
-                            {{student.uni}}<br>
-                            {{student.field}}<br>
+                      </mat-expansion-panel-header>
 
-                            畢業論文:{{student.title}}
-  
-                          </p>
-                      </div>
-                    </div>
-                  </div></div>
-                </ng-container>
-                <ng-container *ngIf="listInfo.student.bachelorStudent.length > 0">
-                  <h4>學士班</h4>
-                  <div *ngFor="let student of listInfo.student.bachelorStudent">
-                      <div class="card-f">
-                        <div class="row">
+                      <mat-panel-description>
+                        <div class="col">大學： {{student.uni}}
+                          <div ng-if="student > 0">
+                          </div>{{student.year}}年{{student.field}}畢業
+                        </div>
+                      </mat-panel-description>
+                    </mat-expansion-panel>
 
-                        <div class="col">
-  
-                          <div [ngClass]="student.male == true ? 'avatar': 'avatar-f'">
-                          </div>
-                        </div>
-                        <div class="col-8">
-  
-                          <p>
-                            <a>
-                              {{student.name}}</a><br>
-                            專題標題:{{student.title}}<br>
-                            {{student.uni}}<br>
-                            {{student.field}}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
                   </div>
                 </ng-container>
-                <hr />
-              </ng-container>
-  
-            </div>
+
+              </mat-accordion>
+            </ng-container>
+
+
           </div>
-  
         </div>
+        <br>
+        <br>
+        <br>
       </div>
     </div>
-  
-  </body>
-  <app-footer></app-footer>
+  </div>
+
+</body>
+<app-footer></app-footer>
