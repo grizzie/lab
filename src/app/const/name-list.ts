@@ -1,38 +1,70 @@
-import { Component, OnInit } from '@angular/core';
+import { FormerNameList, Namelist } from '../interfaces/namelist';
 
-interface StudentInfo {
-  name: string;
-  male: boolean;
-  field: string;
-  title: string;
-  study: string;
-  uni: string;
-  year: number;
-}
+export class NameListData {
+  static readonly current: Namelist[] = [
+    {
+      name: '吳越',
+      male: true,
+      field: 'SDN & BigData',
+      study: 'Master-degree',
+    },
+    {
+      name: '朱登豪',
+      male: true,
+      field: 'SDN & IOT',
+      study: 'Master-degree',
+    },
+    {
+      name: '黃加賢',
+      male: true,
+      field: 'SDN & Spark',
+      study: 'Master-degree',
+    },
+    {
+      name: '​蔣明祐',
+      male: true,
+      field: '',
+      study: 'Master-degree',
+    },
+    {
+      name: '陳文謙',
+      male: true,
+      field: '',
+      study: 'Master-degree',
+    },
+    {
+      name: '楊竣智',
+      male: true,
+      field: '人臉辨識系統',
+      study: 'On-the-Job-Master-degree',
+    },
+    {
+      name: '劉大然',
+      male: true,
+      field: '無線通訊',
+      study: 'On-the-Job-Master-degree',
+    },
+    {
+      name: '林巧苓',
+      male: false,
+      field: 'ASP.NET程式設計',
+      study: 'On-the-Job-Master-degree',
+    },
+    {
+      name: '鄭羽彤',
+      male: false,
+      field: '音樂教學系統',
+      study: 'On-the-Job-Master-degree',
+    },
+    {
+      name: '郭育銘',
+      male: true,
+      field: '大數據應用',
+      study: 'On-the-Job-Master-degree',
+    },
+  ];
 
-interface StudentListWithStudy {
-  proStudent: StudentInfo[];
-  proJobStudent: StudentInfo[];
-  masterStudent: StudentInfo[];
-  masterJobStudent: StudentInfo[];
-  bachelorStudent: StudentInfo[];
-}
-
-interface StudentListWithYear {
-  [key: number]: StudentListWithStudy;
-}
-
-interface StudentList {
-  year: number;
-  student: StudentListWithStudy;
-}
-@Component({
-  selector: 'app-former-members',
-  templateUrl: './former-members.component.html',
-  styleUrls: ['./former-members.component.css'],
-})
-export class FormerMembersComponent implements OnInit {
-  students: StudentInfo[] = [
+  static readonly former: FormerNameList[] = [
     {
       name: '張冊',
       male: true,
@@ -146,7 +178,7 @@ export class FormerMembersComponent implements OnInit {
       male: true,
       field: '電機工程學系碩士在職專班',
       title: '基於NDN網路的高效能動態網路負載調節機制以減少能源消耗',
-      study: 'masterJobStudent',
+      study: 'MasterJobStudent',
       uni: '國立宜蘭大學',
       year: 101,
     },
@@ -178,32 +210,4 @@ export class FormerMembersComponent implements OnInit {
       year: 99,
     },
   ];
-
-  public studentList: StudentList[] = [];
-
-  constructor() {}
-
-  ngOnInit() {
-    const tempList: StudentListWithYear = {};
-    // 把資料以年份作為key，在加入資料會根據年份小到大排序
-    this.students.forEach((studentInfo) => {
-      if (!tempList[studentInfo.year]) {
-        tempList[studentInfo.year] = {
-          proStudent: [],
-          proJobStudent: [],
-          masterStudent: [],
-          masterJobStudent: [],
-          bachelorStudent: [],
-        };
-      }
-      tempList[studentInfo.year][studentInfo.study].push(studentInfo);
-    });
-    // 把object轉成array方便使用ngFor
-    this.studentList = Object.entries(tempList).map(([key, value]) => {
-      return { year: parseInt(key, 10), student: value } as StudentList;
-    });
-    //如果要排大到小需要逆轉順序
-    this.studentList.reverse();
-    console.log(tempList);
-  }
 }
